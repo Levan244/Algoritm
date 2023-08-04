@@ -1,8 +1,7 @@
 package org.example;
 
-public class NullRequestException extends RuntimeException {
-    public NullRequestException() {
-    }
+public class NullRequestException extends RuntimeException {public NullRequestException() {
+}
 
     public NullRequestException(String message) {
         super(message);
