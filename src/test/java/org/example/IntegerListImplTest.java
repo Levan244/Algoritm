@@ -169,7 +169,6 @@ class IntegerListImplTest {
         assertFalse(list.contains(5));
     }
 
-    //indexOf(Integer item);
     @Test
     void shouldReturnCorrectIndexOfItemIndexOfTest1() {
         list.add(1);
@@ -187,7 +186,6 @@ class IntegerListImplTest {
     }
 
 
-    //lastIndexOf(Integer item)
     @Test
     void shouldReturnCorrectIndexOfItemLastIndexOfTest1() {
         list.add(1);
@@ -204,7 +202,6 @@ class IntegerListImplTest {
         assertEquals(list.lastIndexOf(3), -1);
     }
 
-    //get(int index);
     @Test
     void shouldReturnCorrectValueGetTest1() {
         list.add(1);
@@ -221,7 +218,6 @@ class IntegerListImplTest {
                 () -> list.get(7));
     }
 
-    //equals(StringList otherList);
     @Test
     void shouldReturnTrueIfStringListsAreEqualsEqualsTest1() {
         list.add(1);
@@ -256,7 +252,6 @@ class IntegerListImplTest {
     }
 
 
-    //size();
     @Test
     void shouldReturnCorrectSizeTest1() {
         list.add(1);
@@ -268,7 +263,6 @@ class IntegerListImplTest {
         assertEquals(list.size(), 2);
     }
 
-    //isEmpty();
     @Test
     void shouldReturnTrueIsEmptyTest1() {
         assertTrue(list.isEmpty());
@@ -280,7 +274,7 @@ class IntegerListImplTest {
         assertFalse(list.isEmpty());
     }
 
-    //clear();
+
     @Test
     void shouldRemoveAllItemsAndDecreaseSizeClearTest() {
         list.add(1);
@@ -293,7 +287,6 @@ class IntegerListImplTest {
     }
 
 
-    //toArray();
     @Test
     void shouldReturnCorrectValueToArrayTest1() {
         Integer[] result = list.toArray();
@@ -309,10 +302,10 @@ class IntegerListImplTest {
         assertArrayEquals(expectedResult, result);
     }
 
-    //increaseArray();
+
     @Test
-    //при добавлении элементов, большего кол-ва чем длина массива в конструкторе,
-    // должен присваивать новый массив с большей длиной и корректно переносить элементы в новый массив.
+        //при добавлении элементов, большего кол-ва чем длина массива в конструкторе,
+        // должен присваивать новый массив с большей длиной и корректно переносить элементы в новый массив.
     void shouldCorrectlyTransferElementValuesToTheNewArrayWhenTheStorageIsIncremented() {
         for (int i = 0; i < 11; i++) {
             Integer expected = list.add(1);
